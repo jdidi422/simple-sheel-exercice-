@@ -8,12 +8,12 @@
  */
 int main(void)
 {
-    pid_t pid, ppid;
+    pid_t  pid, ppid;
 
     pid = getpid();
     ppid = getppid();
 
-    printf("pid=%d, parent id=%d\n", pid, ppid);
+    printf("pid = %d\nparent id = %d\n", pid, ppid);
 
     return (0);
 }

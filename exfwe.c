@@ -7,7 +7,7 @@
 int main() {
     int i = 0;
     pid_t pid;
-    int status;
+    
     char *args[] = {"/bin/ls", "-a", "/tmp", NULL}; 
     
     for (i = 0; i < 5; i++) {
@@ -25,7 +25,7 @@ int main() {
             }
         } else {
           
-            wait(&status);
+            wait(NULL);
         }
     }
     
